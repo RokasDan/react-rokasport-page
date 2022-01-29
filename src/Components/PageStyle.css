@@ -1,0 +1,7 @@
+.pageStyle{
+    display: -webkit-flex;
+    background: blue;
+    flex-direction: column;
+    white-space: normal;
+    height: 100%
+}

@@ -1,0 +1,175 @@
+.playerStyle {
+    display: -webkit-flex;
+    background: coral;
+    flex-direction: column;
+    white-space: normal;
+}
+
+.audioPlayer {
+    display: flex;
+    margin:auto;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.audioProgressContainer {
+    display: flex;
+    align-items: center;
+    transform: translateY(2px);
+}
+
+.progressBar {
+    --bar-bg: blue;
+    --seek-before-width: 100px;
+    --seek-before-color: red;
+    --knobby: black;
+    --selectedKnobby: yellow;
+
+    appearance: none;
+    outline: none;
+    background: var(--bar-bg);
+    width: 100%;
+    height: 2px;
+    justify-content: space-between;
+    margin: 0 auto;
+    transform: translateY(-5px);
+}
+
+/* progress bar for Safari */
+.progressBar::-webkit-slider-runnable-track {
+    outline: none;
+    background: var(--bar-bg);
+    position: relative;
+    width: 100%;
+    height: 2px;
+    justify-content: space-between;
+    margin: 0 auto;
+    transform: translateY(-5px);
+}
+
+/* progress bar for firefox */
+.progressBar::-moz-range-track {
+    outline: none;
+    background: var(--bar-bg);
+    position: relative;
+    width: 100%;
+    height: 2px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.progressBar::-moz-focus-outer {
+    border: 0;
+}
+
+/* progress bar - chrome and safari */
+.progressBar::before {
+    content: '';
+    height: 2px;
+    width: var(--seek-before-width);
+    background-color: var(--seek-before-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-progress {
+    background-color: var(--seek-before-color);
+    height: 2px;
+}
+
+/* Knobby - chrome and safari */
+.progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin: -2px 0 0 0;
+    height: 17px;
+    width: 8px;
+    border: none;
+    background-color: var(--knobby);
+    cursor: pointer;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+/* Knobby while dragging for chrome and safari */
+.progressBar:active::-webkit-slider-thumb{
+    background: var(--selectedKnobby);
+}
+
+/* Knobby for firefox */
+.progressBar::-moz-range-thumb {
+    height: 17px;
+    width: 8px;
+    border: transparent;
+    background-color: var(--knobby);
+    cursor: pointer;
+    z-index: 3;
+    box-sizing: border-box;
+}
+/* Knobby while dragging for firefox */
+.progressBar:active::-moz-range-thumb{
+    background: var(--selectedKnobby);
+}
+
+.forwardBackward{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.forwardBackward:hover {
+    color: white;
+}
+
+.playPause {
+    background: none;
+    border: none;
+    display: flex;
+    font-family: monospace;
+    font-size: 16px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.pauseButton{
+    position: relative;
+}
+
+.pauseButton:hover {
+    color: white;
+}
+
+.playButton {
+    position: relative;
+    left: 2px;
+}
+
+.playButton:hover {
+    color: white;
+}
+
+.currentTime,
+.duration {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.duration {
+    position: relative;
+}
+
+.currentTime{
+    margin-left: 5px;
+}
+
+.rangeBar {
+    width: 100%;
+}
