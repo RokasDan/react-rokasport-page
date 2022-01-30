@@ -10,6 +10,7 @@ const Audio = () => {
                 Audio
             </h1>
             <AudioPlayer audioName="Space Symphony" link="/audio/Space_Symphony.mp3"/>
+          <AudioPlayer audioName="Orbit The Sun" link="/audio/Orbit_The_Sun.mp3"/>
         </div>
     );
 }
