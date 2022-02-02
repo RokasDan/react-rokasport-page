@@ -9,7 +9,7 @@ import {AudioState} from "./AudioState";
 const AudioPlayer = (props) => {
   // Audio player
 
-  // Is play pause button pressed variable
+  // This variable is just used to set play and pause button.
   const [playPause, setPlayPause] = useState(false);
 
   // Bool variable used to change the play and pause button on toggle
@@ -17,7 +17,8 @@ const AudioPlayer = (props) => {
   const {value1, value2} = useContext(AudioState);
   const [isPlaying, setIsPlaying] = value1;
 
-  // Value which stores if the player os active in the Audio State context.
+  // Value which stores if the player is already active, this also shows
+  // if another player is active.
   const [activePlayer, setActivePlayer] = value2;
 
   // Variable to hook the duration of the audio
