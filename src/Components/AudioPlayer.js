@@ -12,14 +12,9 @@ const AudioPlayer = (props) => {
   // This variable is just used to set play and pause button.
   const [playPause, setPlayPause] = useState(false);
 
-  // Bool variable used to change the play and pause button on toggle
-  // The Bool value is taken from the Audio State context.
-  const {value1, value2} = useContext(AudioState);
-  const [isPlaying, setIsPlaying] = value1;
-
   // Value which stores if the player is already active, this also shows
   // if another player is active.
-  const [activePlayer, setActivePlayer] = value2;
+  const [activePlayer, setActivePlayer] = useContext(AudioState);
 
   // Variable to hook the duration of the audio
   const [duration, setDuration] = useState(0);
@@ -39,11 +34,19 @@ const AudioPlayer = (props) => {
     progressBar.current.max = seconds;
   }, [audioPlayer?.current?.loadedMetadata, audioPlayer?.current?.readyState])
 
+  // Pauses the player if another player is selected to play.
+  useEffect(() => {
+    if(activePlayer !== props.id){
+      setPlayPause(false);
+      audioPlayer.current.pause();
+      cancelAnimationFrame(animationRef.current);
+    }
+  })
 
   // Resetting the audio once the audio finished playing
   useEffect(() => {
-    if(currentTime === duration && duration !==0){
-      forceResetPause();
+    if(currentTime >= duration){
+      forcePause();
       audioReset();
     }
   })
@@ -57,62 +60,30 @@ const AudioPlayer = (props) => {
     return `${returnedMinutes}:${returnedSeconds}`;
   }
 
-  // Function which changes the Bool variable from false to true to toggle
-  // button icon for play and pause.
-  // const togglePlayPause = () => {
-  //   const prevValue = isPlaying;
-  //   setIsPlaying(!prevValue);
-  //   if (!prevValue) {
-  //     setActivePlayer(props.id);
-  //     audioPlayer.current.play();
-  //     animationRef.current = requestAnimationFrame(whilePlaying);
-  //   } else {
-  //     audioPlayer.current.pause();
-  //     setActivePlayer('0');
-  //     cancelAnimationFrame(animationRef.current);
-  //   }
-  // }
-
-  const forceResetPause = () => {
-    setIsPlaying(false);
+  // Used to pause the player once it reaches the end.
+  const forcePause = () => {
+    setActivePlayer('');
     setPlayPause(false);
     audioPlayer.current.pause();
     cancelAnimationFrame(animationRef.current);
   }
 
-
-  // This function changes states with audio State context provider.
-  // It checks if there are any players which are playing already.
-  // If so it mutes them if a new player is activated.
+  // turns on the player and changes the button to play or pause
+  // First it checks if another player is in use through the audio state context
+  // with the active Player variable.
   const togglePlayPause = () => {
-    if(activePlayer === props.id)
-    {
-      setIsPlaying(false);
-      setActivePlayer("0");
-    } else {
-      if(activePlayer !== ''){
-        setIsPlaying(true);
-        setActivePlayer(props.id);
-      } else {
-        setActivePlayer(props.id);
-        setIsPlaying(!isPlaying);
-      }
-    }
-  }
-
-  // This uses the data from context provider to activate the player.
-  // According to the function above this will either play or stop.
-  useEffect(() => {
-    if(isPlaying === true && activePlayer === props.id){
+    if(activePlayer === '' || activePlayer !== props.id){
+      setActivePlayer(props.id);
       setPlayPause(true);
       audioPlayer.current.play();
       animationRef.current = requestAnimationFrame(whilePlaying);
     } else {
+      setActivePlayer('');
       setPlayPause(false);
       audioPlayer.current.pause();
       cancelAnimationFrame(animationRef.current);
     }
-  })
+  }
 
   // Knobby animation function
   const whilePlaying = () => {
