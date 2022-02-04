@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg
+{
+  position:fixed;
+  background: linear-gradient(#001eff, green 50%, green 115%);
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+}
