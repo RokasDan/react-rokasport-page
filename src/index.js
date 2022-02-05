@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 /*************************************/
-// Low-poly Background animations
+// Low-poly Background animations created by Yusif Alomeri.
 
 var refreshDuration = 10000;
 var refreshTimeout;

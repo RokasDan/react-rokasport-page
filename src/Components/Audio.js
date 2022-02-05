@@ -8,8 +8,8 @@ const Audio = () => {
 
     return(
         <div className="pageStyle">
-            <h1>
-                Audio
+            <h1 className="header1">
+              [Audio]
             </h1>
           <AudioProvider>
             <AudioPlayer id="1" audioName="Space Symphony" link="/audio/Space_Symphony.mp3" />

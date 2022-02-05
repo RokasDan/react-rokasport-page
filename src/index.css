@@ -15,10 +15,12 @@ code {
 .bg
 {
   position:fixed;
-  background: linear-gradient(#001eff, green 50%, green 115%);
+  background: linear-gradient(#070739, #160040 50%, #FF0000 115%);
   width: auto;
   height: auto;
   margin: 0;
   padding: 0;
   z-index: -2;
 }
+
+/* linear-gradient(#081623, #081623 50%, #063e66 115%); also recommend */

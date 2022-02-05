@@ -128,7 +128,7 @@ const AudioPlayer = (props) => {
 
   return (
     <div className="playerStyle">
-      <h3>{props.audioName}</h3>
+      <h2 className="header3">{"<" + props.audioName + ">"}</h2>
       {/*<audio ref={audioPlayer} src="/audio/Space_Symphony.wav" preload="metadata"></audio>*/}
       <audio ref={audioPlayer} preload="metadata">
         <source src={process.env.PUBLIC_URL + props.link} type="audio/mpeg"/>

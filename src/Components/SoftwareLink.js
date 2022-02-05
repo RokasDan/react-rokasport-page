@@ -15,10 +15,10 @@ const SoftwareLink = (props) => {
         <div className='SoftwareLink'>
             <article>
                 <header className='projectDate'>
-                    <h3><Link to={link}>{name}</Link></h3>
-                    Date <time>{date}</time>
+                    <h2 className="header3">{"<"}<Link className="linkStyle" to={link}>{name}</Link>{">"}</h2>
+                     <time className="paragraph">Date {date}</time>
                 </header>
-                <p>{description}</p>
+                <p className="paragraph">{description}</p>
             </article>
         </div>
     );

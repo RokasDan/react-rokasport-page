@@ -1,9 +1,18 @@
+@font-face {
+  src: url(../Fonts/IBMPlexSans-Light.ttf);
+  font-family: IBMLight;
+}
+
 .SoftwareLink{
     width: 100%;
-    background-color: green;
 }
 
 .projectDate{
     line-height: 0.1em;
-    color: white;
 }
+
+.linkStyle {
+  text-decoration: none;
+  color: #FF008E;
+}
+

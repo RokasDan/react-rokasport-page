@@ -6,10 +6,10 @@ const About = () => {
 
     return(
         <div className="pageStyle">
-            <h1>
-                About
+            <h1 className="header1">
+                [About]
             </h1>
-            <p>
+            <p className="paragraph">
                 asfjefjwe hfiqefqhewio fhiqwef hioeqfqe
                 egg
                 qeg

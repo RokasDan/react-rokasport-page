@@ -1,14 +1,70 @@
+@font-face {
+  src: url(../Fonts/IBMPlexSans-Light.ttf);
+  font-family: IBMLight;
+}
+
+.header1 {
+  font-family: IBMLight;
+  color: #39FF14;
+}
+
+.header3 {
+  font-family: IBMLight;
+  color: #39FF14;
+}
+
 .buttonStyle {
     display: flex;
-    background: red;
+    background: #145708;
+    color: black;
     height: 100%;
     width: 80px;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    font-family: IBMLight;
+    transition: 0.5ms;
+}
+
+.buttonStyle-left {
+  display: flex;
+  background: #145708;
+  color: black;
+  height: 100%;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: IBMLight;
+  border-top-left-radius: 15px;
+  transition: 1s;
+}
+
+.buttonStyle-right {
+  display: flex;
+  background: #145708;
+  color: black;
+  height: 100%;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: IBMLight;
+  border-top-right-radius: 15px;
+  transition: 1s;
+}
+
+.buttonStyle:focus,
+.buttonStyle-left:focus,
+.buttonStyle-right:focus{
+
+  background: #39FF14;
+
 }
 
 .locatorStyle {
-    background: yellow;
+    padding-top: 30px;
+    background: none;
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -25,6 +81,8 @@
 .webName {
     margin: initial;
     height: 100%;
+    font-family: IBMLight;
+    color: #39FF14;
 }
 
 @media only screen and (max-width: 460px){
@@ -34,12 +92,16 @@
         text-align: left;
     }
 
-    .buttonStyle{
+    .buttonStyle,
+    .buttonStyle-left,
+    .buttonStyle-right{
         width: 100%;
     }
+
 
     .navBar{
         width: 100%;
         height: 43px;
     }
+
 }

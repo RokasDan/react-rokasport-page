@@ -1,6 +1,5 @@
 .playerStyle {
     display: -webkit-flex;
-    background: coral;
     flex-direction: column;
     white-space: normal;
 }
@@ -19,10 +18,10 @@
 }
 
 .progressBar {
-    --bar-bg: blue;
+    --bar-bg: #39FF14;
     --seek-before-width: 0;
     --seek-before-color: red;
-    --knobby: black;
+    --knobby: #39FF14;
     --selectedKnobby: yellow;
 
     appearance: none;
@@ -115,6 +114,7 @@
 }
 
 .forwardBackward{
+    color: #39FF14;
     background: none;
     border: none;
     display: flex;
@@ -129,6 +129,7 @@
 }
 
 .playPause {
+    color: #39FF14;
     background: none;
     border: none;
     display: flex;
@@ -140,6 +141,7 @@
 }
 
 .pauseButton{
+    color: #39FF14;
     position: relative;
 }
 

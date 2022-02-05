@@ -1,7 +1,26 @@
 .pageStyle{
+    padding: 15px;
     display: -webkit-flex;
-    background: blue;
+    background: rgba(0, 0, 0, 0.4);
+    border:2px solid #39FF14;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     flex-direction: column;
     white-space: normal;
     height: 100%
+}
+
+.paragraph {
+  font-size: 18px;
+  font-family: IBMLight;
+  color: #39FF14;
+}
+
+@media only screen and (max-width: 460px){
+
+  .pageStyle{
+    border-top-left-radius: 0px;
+  }
+
 }
