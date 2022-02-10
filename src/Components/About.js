@@ -6,9 +6,9 @@ const About = () => {
 
     return(
         <div className="pageStyle">
-            <h1 className="header1">
-                [About]
-            </h1>
+            <h2 className="pageHeader1">
+                About
+            </h2>
             <p className="paragraph">
                 asfjefjwe hfiqefqhewio fhiqwef hioeqfqe
                 egg

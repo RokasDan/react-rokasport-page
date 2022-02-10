@@ -8,9 +8,9 @@ const Software = () => {
 
     return(
         <div className="pageStyle">
-            <h1 className="header1">
-                [Software]
-            </h1>
+            <h2 className="pageHeader1">
+                Software
+            </h2>
             <p className="paragraph">
                 Moree skoooptyidy Poootidity
                 ADASDASD

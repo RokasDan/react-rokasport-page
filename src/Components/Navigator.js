@@ -9,9 +9,9 @@ const Navigator = () => {
         <header id="move" className="locatorStyle">
             <h1 className="webName">[Rokas.Dan]</h1>
             <nav className="navBar">
-                <Link to='/about' id='about' className="buttonStyle-left">{"<"}About{">"}</Link>
-                <Link to='/software' id='software' className="buttonStyle">{"<"}Software{">"}</Link>
-                <Link to='/audio' id='audio' className="buttonStyle-right">{"<"}Audio{">"}</Link>
+                <Link to='/about' id='about' className="buttonStyle-left">About</Link>
+                <Link to='/software' id='software' className="buttonStyle">Software</Link>
+                <Link to='/audio' id='audio' className="buttonStyle-right">Audio</Link>
             </nav>
         </header>
     );

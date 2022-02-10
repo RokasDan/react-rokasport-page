@@ -7,12 +7,28 @@
     width: 100%;
 }
 
-.projectDate{
-    line-height: 0.1em;
+.dateStyle {
+  font-family: IBMLight;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  padding: 2px;
+}
+
+.linkHeader{
+  margin: 0px;
 }
 
 .linkStyle {
+  padding: 2px;
+  text-align: center;
   text-decoration: none;
-  color: #FF008E;
+  color: #2ebbce;
+  font-family: IBMLight;
+  transition: 250ms;
+}
+
+.linkStyle:hover {
+  background-color: #2ebbce;
+  color: black;
 }
 

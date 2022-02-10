@@ -1,9 +1,9 @@
 .App {
-    width: 800px;
+    width: 640px;
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 640px) {
     .App{
         margin: unset;
         width: 100%;

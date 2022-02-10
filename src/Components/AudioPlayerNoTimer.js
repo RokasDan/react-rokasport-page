@@ -2,7 +2,7 @@ import React, {useState, useRef, useEffect, useContext} from 'react';
 import './AudioPlayer.css';
 import {AudioState} from "./AudioState";
 
-const AudioPlayer = (props) => {
+const AudioPlayerNoTimer = (props) => {
   // Audio player
 
   // This variable is just used to set play and pause button.
@@ -142,21 +142,13 @@ const AudioPlayer = (props) => {
           </button>
           <button className="forwardBackwardPlay" onClick={forwardAudio}>{"[+30]"}</button>
         </div>
-            <div className="audioProgressContainer">
-            {/* progress bar */}
+        <div className="audioProgressContainer">
+          {/* progress bar */}
 
-            <input className="progressBar" type="range" defaultValue="0" ref={progressBar} onChange={changeRange}/>
-            </div>
-
-        <div className="timer">
-            {/* current time */}
-            <div className="currentTime">{calculateTime(currentTime)}|</div>
-
-            {/* duration time */}
-            <div className="duration">{(duration && !isNaN(duration)) && calculateTime(duration)}</div>
+          <input className="progressBar" type="range" defaultValue="0" ref={progressBar} onChange={changeRange}/>
         </div>
       </div>
     </div>
   );
 }
-export default AudioPlayer;
+export default AudioPlayerNoTimer;

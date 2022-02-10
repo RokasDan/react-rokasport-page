@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
 }
 
 code {
@@ -15,7 +16,7 @@ code {
 .bg
 {
   position:fixed;
-  background: linear-gradient(#070739, #160040 50%, #FF0000 115%);
+  background: linear-gradient(#111c27, #111c27 50%, #29617b 115%);
   width: auto;
   height: auto;
   margin: 0;
