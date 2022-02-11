@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect, useContext} from 'react';
-import './AudioPlayer.css';
+import './AudioPlayerNoTimer.css';
 import {AudioState} from "./AudioState";
 
 const AudioPlayerNoTimer = (props) => {

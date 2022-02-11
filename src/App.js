@@ -3,6 +3,7 @@ import Navigator from './Components/Navigator'
 import About from './Components/About'
 import Software from './Components/Software'
 import Audio from './Components/Audio'
+import Home from './Components/Home'
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
             <Navigator />
             <div>
                 <Routes>
+                    <Route path="/" exact element={<Home />}/>
+
                     <Route path="/about" element={<About />}/>
 
                     <Route path="/software" element={<Software />}/>

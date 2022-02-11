@@ -13,6 +13,18 @@
   color: #2ebbce;
 }
 
+.headerLink {
+  font-family: IBMLight;
+  color: #2ebbce;
+  text-decoration: none;
+  transition: 250ms;
+}
+
+.headerLink:hover {
+  color: black;
+  background: #2ebbce;
+}
+
 .buttonStyle {
     display: flex;
     background: #1e727d;
@@ -54,12 +66,18 @@
   transition: 300ms;
 }
 
-.buttonStyle:focus,
-.buttonStyle-left:focus,
-.buttonStyle-right:focus{
-
+.navAboutActive {
+  display: flex;
   background: #2ebbce;
-
+  color: black;
+  height: 100%;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: IBMLight;
+  border-top-left-radius: 15px;
+  transition: 300ms;
 }
 
 .locatorStyle {
@@ -73,6 +91,10 @@
     height: 100%;
 }
 
+.active{
+  background: #2ebbce;
+}
+
 .navBar {
     display: -webkit-flex;
     flex-direction: row;
@@ -83,6 +105,7 @@
     height: 100%;
     font-family: IBMLight;
     color: #2ebbce;
+    margin-left: 15px;
 }
 
 @media only screen and (max-width: 460px){
