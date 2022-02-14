@@ -16,7 +16,7 @@ const SoftwareLink = (props) => {
 
                 <header className='projectDate'>
                   <h3 className="linkHeader"><Link className="linkStyle" to={link}>{"["}{name}{"]"}</Link></h3>
-                     <time className="dateStyle">Date {date}</time>
+                     <time className="dateStyle">Date: {date}</time>
                 </header>
                 <p className="paragraph">{description}</p>
 

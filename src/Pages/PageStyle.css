@@ -1,0 +1,115 @@
+@font-face {
+  src: url(../Fonts/IBMPlexSans-Light.ttf);
+  font-family: IBMLight;
+}
+
+@font-face {
+  src: url(../Fonts/IBMPlexSans-LightItalic.ttf);
+  font-family: IBMLightItalic;
+}
+
+.pageStyle{
+    padding: 1em;
+    display: -webkit-flex;
+    background: rgba(0, 0, 0, 0.3);
+    border:2px solid #2ebbce;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex-direction: column;
+    white-space: normal;
+    height: 100%
+}
+
+.pictureNote {
+  color: #2ebbce;
+  text-align: center;
+  font-family: IBMLightItalic;
+}
+
+.pictureWrapper1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 65%;
+  padding-top: 15px;
+}
+
+.pictureWrapper2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  padding-top: 15px;
+}
+
+.picturesWrapper3 {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  width: 80%;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.singlePicture {
+  width: 100%;
+  padding: 5px;
+}
+
+.horizontal {
+  display: flex;
+  flex-flow: row;
+}
+
+.horizontalDiv {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.inLineLink {
+  color: #2ebbce;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 250ms;
+}
+
+.inLineLink:hover {
+  color: black;
+  background: #2ebbce;
+}
+
+.pageHeader1{
+  color: white;
+  font-family: IBMLight;
+}
+
+.paragraph {
+  padding: 2px;
+  font-family: IBMLight;
+  color: white;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 460px){
+
+  .pageStyle{
+    border-top-left-radius: 0px;
+  }
+
+  .horizontal {
+    flex-flow: column;
+  }
+
+  .picturesWrapper3 {
+    flex-flow: column;
+  }
+}

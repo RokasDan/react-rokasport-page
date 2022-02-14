@@ -1,7 +1,6 @@
-import AudioPlayerNoTimer from "./AudioPlayerNoTimer";
+import AudioPlayerNoTimer from "../Components/AudioPlayerNoTimer";
+import {AudioProvider} from '../Components/AudioState';
 import './PageStyle.css';
-import React, {useState} from 'react';
-import {AudioProvider} from './AudioState'
 
 const Audio = () => {
     // Page for audio and music works.

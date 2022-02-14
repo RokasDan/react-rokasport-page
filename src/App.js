@@ -1,9 +1,9 @@
 import './App.css';
 import Navigator from './Components/Navigator'
-import About from './Components/About'
-import Software from './Components/Software'
-import Audio from './Components/Audio'
-import Home from './Components/Home'
+import About from './Pages/About'
+import Software from './Pages/Software'
+import Audio from './Pages/Audio'
+import Home from './Pages/Home'
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 function App() {
