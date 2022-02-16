@@ -1,4 +1,4 @@
-import AudioPlayerNoTimer from "../Components/AudioPlayerNoTimer";
+import AudioLinkNoTimer from "../Components/AudioLinkNoTimer";
 import {AudioProvider} from '../Components/AudioState';
 import './PageStyle.css';
 
@@ -11,8 +11,10 @@ const Audio = () => {
               Audio
             </h2>
           <AudioProvider>
-            <AudioPlayerNoTimer id="1" audioName="Space Symphony" link="/audio/Space_Symphony.mp3" />
-            <AudioPlayerNoTimer id="2" audioName="Orbit The Sun" link="/audio/Orbit_The_Sun.mp3" />
+            <AudioLinkNoTimer id="1" to='/' audioName="Space Symphony" link="/audio/Space_Symphony.mp3"
+            description="Cinematic track which mostly uses orchestra VST's."/>
+            <AudioLinkNoTimer id="2" to='/' audioName="Orbit The Sun" link="/audio/Orbit_The_Sun.mp3"
+            description="Cinematic track modeled after M83 music."/>
           </AudioProvider>
         </div>
     );

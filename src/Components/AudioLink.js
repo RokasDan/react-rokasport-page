@@ -1,8 +1,9 @@
 import React, {useState, useRef, useEffect, useContext} from 'react';
-import './AudioPlayer.css';
+import './AudioLink.css';
 import {AudioState} from "./AudioState";
+import {Link} from "react-router-dom";
 
-const AudioPlayer = (props) => {
+const AudioLink = (props) => {
   // Audio player
 
   // This variable is just used to set play and pause button.
@@ -124,8 +125,13 @@ const AudioPlayer = (props) => {
 
   return (
     <div className="playerStyle">
-      <h3 className="header3">{"[" + props.audioName + "]"}</h3>
-      {/*<audio ref={audioPlayer} src="/audio/Space_Symphony.wav" preload="metadata"></audio>*/}
+
+      <header className='audioLink'>
+        <h3 className="linkHeader"><Link className="linkStyle" to={props.to}>{"[" + props.audioName + "]"}</Link></h3>
+        <p className="description ">{props.description}</p>
+      </header>
+
+
       <audio ref={audioPlayer} preload="metadata">
         <source src={process.env.PUBLIC_URL + props.link} type="audio/mpeg"/>
       </audio>
@@ -159,4 +165,4 @@ const AudioPlayer = (props) => {
     </div>
   );
 }
-export default AudioPlayer;
+export default AudioLink;
