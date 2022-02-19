@@ -19,7 +19,7 @@ const Audio = () => {
                           description="Cinematic track which mostly uses orchestra VST's."/>
         <AudioLinkNoTimer id="4" to='/' audioName="Don't" link="/audio/Dont.mp3"
                           description="JazzPop cover of a song written by Ed Sheeran."/>
-        <AudioLinkNoTimer id="5" to='/' audioName="Steps" link="/audio/The Steps.mp3"
+        <AudioLinkNoTimer id="5" to='/' audioName="Steps" link="/audio/The_Steps.mp3"
                           description="Original classic orchestra track."/>
         <AudioLinkNoTimer id="6" to='/' audioName="If I Knew" link="/audio/If_I_Knew.mp3"
                           description="Rock cover of a song written by Bruno Mars."/>
@@ -29,7 +29,7 @@ const Audio = () => {
                           description="A short and warm light-rock track."/>
         <AudioLinkNoTimer id="9" to='/' audioName="Pretty Good Job" link="/audio/Pretty_Good_Job.mp3"
                           description="Original Cinematic jazz track."/>
-        <AudioLinkNoTimer id="10" to='/' audioName="This Moment" link="/audio/This Moment.mp3"
+        <AudioLinkNoTimer id="10" to='/' audioName="This Moment" link="/audio/This_Moment.mp3"
                           description="Original Cinematic orchestra track."/>
         <AudioLinkNoTimer id="11" to='/' audioName="Parachutes" link="/audio/Parachute.mp3"
                           description="Old cover of a song written by Coldplay."/>
