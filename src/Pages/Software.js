@@ -14,7 +14,7 @@ const Software = () => {
         Here you will find my software projects. Click on the links to find out more.
       </p>
 
-      <SoftwareLink projectName='Trolley VR' link='/audio' date='Currently Working On' description='
+      <SoftwareLink projectName='Trolley VR' link='/' date='Currently Working On' description='
       A multiplayer virtual reality game which recreates multiple variants of the famous trolley dilemma.
       Project is made with Unity3D and C#.'/>
 
