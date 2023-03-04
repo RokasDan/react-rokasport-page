@@ -1,0 +1,30 @@
+@font-face {
+  src: url(../Fonts/IBMPlexSans-Light.ttf);
+  font-family: IBMLight;
+}
+
+.projectHeader{
+  padding-top: 20px;
+  width: 100%;
+}
+
+.spacing {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.naming{
+  padding: 0px;
+  color: #FFFFFF;
+  font-family: IBMLight;
+  margin: 0px;
+}
+
+.dateStyle {
+  font-family: IBMLight;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  padding-left: 0px;
+  margin-top:0;
+}

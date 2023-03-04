@@ -14,11 +14,11 @@ const SoftwareLink = (props) => {
     return(
         <div className='SoftwareLink'>
 
-                <header className='projectDate'>
+                <header className="spacing">
                   <h3 className="linkHeader"><Link className="linkStyle" to={link}>{"["}{name}{"]"}</Link></h3>
-                     <time className="dateStyle">Date: {date}</time>
+                     <p className="dateStyle">Posted: {date}</p>
                 </header>
-                <p className="paragraph">{description}</p>
+                <p className="description2">{description}</p>
 
         </div>
     );

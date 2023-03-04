@@ -10,9 +10,10 @@ const Software = () => {
       <h2 className="pageHeader1">
         Software
       </h2>
-      <p className="paragraph">
-        Here you will find my software projects. Click on the links to find out more.
-      </p>
+
+      <SoftwareLink projectName='Nottcraft' link='/Nottcraft' date='Currently Working On' description='
+      Nottingham City in Minecraft: Explore a 1:1 scale replica of Nottingham using real-life
+      coordinates, generated using LiDAR data sets.'/>
 
       <SoftwareLink projectName='Trolley VR' link='/' date='Currently Working On' description='
       A multiplayer virtual reality game which recreates multiple variants of the famous trolley dilemma.

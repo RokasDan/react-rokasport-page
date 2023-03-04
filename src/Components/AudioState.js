@@ -6,7 +6,6 @@ export const AudioProvider = ({children}) => {
 
   // Stores Active player id.
   const [activePlayer, setActivePlayer] = useState('');
-  console.log(activePlayer);
 
   return(
     <AudioState.Provider value={[activePlayer, setActivePlayer]}>

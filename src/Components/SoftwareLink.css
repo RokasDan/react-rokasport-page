@@ -12,15 +12,32 @@
   font-family: IBMLight;
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
-  padding: 2px;
+  padding-left: 10px;
+  margin-top:0;
+}
+
+.description2 {
+  padding-top: 0px;
+  padding-bottom: 35px;
+  margin: 0px;
+  font-family: IBMLight;
+  color: white;
+  font-size: 18px;
+}
+
+.spacing {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 .linkHeader{
   margin: 0px;
+  padding: 0px;
 }
 
 .linkStyle {
-  padding: 2px;
+  padding: 0px;
   text-align: center;
   text-decoration: none;
   color: #2ebbce;

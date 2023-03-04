@@ -4,6 +4,9 @@ import About from './Pages/About'
 import Software from './Pages/Software'
 import Audio from './Pages/Audio'
 import Home from './Pages/Home'
+
+import Nottcraft from './Pages/softwareProjects/Nottcraft'
+
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -20,6 +23,8 @@ function App() {
                     <Route path="/software" element={<Software />}/>
 
                     <Route path="/audio" element={<Audio />}/>
+
+                    <Route path="/Nottcraft" element={<Nottcraft />}/>
                 </Routes>
             </div>
         </div>
