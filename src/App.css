@@ -4,6 +4,11 @@
     margin: 0 auto;
 }
 
+.App .app-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 @media only screen and (max-width: 640px) {
     .App{
         margin: unset;
