@@ -5,6 +5,10 @@ import 'prismjs';
 import nottcraft from "../../Pictures/Nottcraft.png";
 import image1 from "../../Pictures/blackmap.png";
 import image2 from "../../Pictures/blackmap2.png";
+import image3 from "../../Pictures/block.png";
+import image4 from "../../Pictures/blocks.png";
+import image5 from "../../Pictures/Flag.png";
+import image6 from "../../Pictures/usingflag.png";
 import 'prismjs/themes/prism.css';
 
 
@@ -115,7 +119,7 @@ const pythonCodeString = `
         targetX = 400000 + TargetEast + 0
         targetZ = 300000 + TargetNorth + 0
 
-        if targetX &lt; 447900 or targetX > 463500 or targetZ > 348000 or targetZ &lt; 332400:
+        if targetX < 447900 or targetX > 463500 or targetZ > 348000 or targetZ < 332400:
             player.say("These coordinates are out of Nottcraft scope!")
         else:
             tellX = targetX - MinX
@@ -159,7 +163,7 @@ const pythonCodeString = `
         targetX = 400000 + TargetEast + 0 + 0
         targetZ = 300000 + TargetNorth + 0 + 0
 
-        if targetX &lt; 447900 or targetX > 463500 or targetZ > 348000 or targetZ &lt; 332400:
+        if targetX < 447900 or targetX > 463500 or targetZ > 348000 or targetZ < 332400:
             player.say("These coordinates are out of Nottcraft scope!")
         else:
             tellX = targetX - MinX
@@ -193,7 +197,7 @@ const pythonCodeString = `
         targetX = Easting
         targetZ = Northing
 
-        if targetX &lt; 447900 or targetX > 463500 or targetZ > 348000 or targetZ &lt; 332400:
+        if targetX < 447900 or targetX > 463500 or targetZ > 348000 or targetZ < 332400:
             player.say("These coordinates are out of Nottcraft scope!")
         else:
             tellX = targetX - MinX
@@ -313,6 +317,13 @@ const Nottcraft = () => {
         building as a reward.
       </p>
 
+      <p className="paragraph1">
+        If you're interested in trying out Nottcraft
+        for yourself, please visit our project on <a className="inLineLink"
+                                                     href="https://github.com/RokasDan">[GitHub]</a> and
+        give it a try.
+      </p>
+
       <h3 className="pageHeader1">
         Nottcraft Level
       </h3>
@@ -341,7 +352,7 @@ const Nottcraft = () => {
       </p>
 
       <VideoComponent
-        src="https://drive.google.com/file/d/1RzsfE4OrmwSYFjsLe95rbRDlRKVgw2dL/preview"/>
+        src="https://www.youtube.com/embed/aOxy6kzxFEY?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560"/>
       <p className='paragraph1'></p>
 
       <h3 className="pageHeader1">
@@ -349,7 +360,7 @@ const Nottcraft = () => {
       </h3>
       <p className='paragraph1'>
         To enable students to navigate Nottcraft with real-life OS coordinates, we developed custom
-        scripts for the modification. However, importing external data into the Education Edition of
+        scripts for the modification. However, importing external code into the Education Edition of
         the game was not possible, as it lacks compilers like Forge or Fabric used in the Java
         Edition. To overcome this limitation, we leveraged the Education Edition's "Code Builder"
         feature, which allowed us to interact with the Minecraft world through a pseudo version of
@@ -368,14 +379,32 @@ const Nottcraft = () => {
       </h3>
 
       <p className='paragraph1'>
-        In conclusion, working on the Nottcraft project has been an exciting and fulfilling
-        experience. Combining Minecraft with geography education was a unique challenge that
-        required creativity and perseverance to overcome the limitations of Minecraft Education
-        Edition. My favorite part of the project was generating a 1:1 replica of Nottingham and
-        exploring it in-game. Even now, I still enjoy turning on the project and walking around it,
-        comparing it to the real city of Nottingham. If you're interested in trying out Nottcraft
-        for yourself, please visit our project on <a className="inLineLink" href="https://github.com/RokasDan">[GitHub]</a> and give it a try.
+        In order to make the treasure caches in Nottcraft more distinct, we designed our own custom
+        blocks and "flag" tools using the Bridge IDE. We created unique textures for each block, with each one
+        representing a specific building in Nottingham. To make the blocks more noticeable, we added
+        a glow-in-the-dark effect, which allowed them to be visible even when placed outside of a
+        chest.
       </p>
+
+      <div className="image-container">
+        <img className='imageWrap' src={image3}/>
+        <img className='imageWrap2' src={image4}/>
+      </div>
+
+      <p className='paragraph1'>
+        If students collect the custom blocks found in the treasure caches, they can use
+        them to craft a "flag" tool using Minecraft's crafting system. This tool allows them
+        to spawn fully decorated buildings of interest in the Nottcraft world once they have found the
+        correct location using ordinance survey coordinates. The flag tool's appearance depends on
+        which blocks were used to craft it, and each combination will spawn a different building
+        when used in the correct location. This feature provides students with a final reward for
+        successfully navigating Nottcraft and locating the treasure caches.
+      </p>
+
+      <div className="image-container">
+        <img className='imageWrap' src={image5}/>
+        <img className='imageWrap2' src={image6}/>
+      </div>
 
       <h3 className="pageHeader1">
         Closing notes
@@ -387,8 +416,7 @@ const Nottcraft = () => {
         required creativity and perseverance to overcome the limitations of Minecraft Education
         Edition. My favorite part of the project was generating a 1:1 replica of Nottingham and
         exploring it in-game. Even now, I still enjoy turning on the project and walking around it,
-        comparing it to the real city of Nottingham. If you're interested in trying out Nottcraft
-        for yourself, please visit our project on <a className="inLineLink" href="https://github.com/RokasDan">[GitHub]</a> and give it a try.
+        comparing it to the real city of Nottingham.
       </p>
 
     </div>

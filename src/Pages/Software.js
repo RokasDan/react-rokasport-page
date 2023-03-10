@@ -11,19 +11,19 @@ const Software = () => {
         Software
       </h2>
 
-      <SoftwareLink projectName='Nottcraft' link='/Nottcraft' date='Currently Working On' description='
+      <SoftwareLink projectName='Nottcraft' link='/Nottcraft' date='2023-03-06' description='
       Nottingham City in Minecraft: Explore a 1:1 scale replica of Nottingham using real-life
       coordinates, generated using LiDAR data sets.'/>
 
-      <SoftwareLink projectName='Trolley VR' link='/' date='Currently Working On' description='
+      <SoftwareLink projectName='Trolley VR' link='/TrolleyVr' date='2022-08-11' description='
       A multiplayer virtual reality game which recreates multiple variants of the famous trolley dilemma.
       Project is made with Unity3D and C#.'/>
 
+      <SoftwareLink projectName='Stealth Boy' link='/StealthBoy' date='2022-01-14' description='
+      A third person stealth platformer game prototype made with Unity3D and C#.'/>
+
       <SoftwareLink projectName='React Audio Player' link='/audio' date='2022-02-08' description='
       A customisable react.js audio player which can have multiple instances on one page.'/>
-
-      <SoftwareLink projectName='Stealth Boy' link='/audio' date='2021-09-26' description='
-      A third person stealth platformer game made with Unity3D and C#.'/>
 
       <SoftwareLink projectName='PyFighter' link='/audio' date='2021-07-12' description='
       A 2D side-scroll platforming fighting game made with Python coding environment.'/>

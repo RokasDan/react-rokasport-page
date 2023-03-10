@@ -1,0 +1,219 @@
+@font-face {
+  src: url(../Fonts/IBMPlexSans-Light.ttf);
+  font-family: IBMLight;
+}
+
+.playerStyle {
+  display: -webkit-flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.audioPlayer {
+  display: flex;
+  margin:auto;
+}
+
+@media only screen and (max-width: 460px) {
+  .audioPlayer {
+    margin: unset;
+    flex-direction: column;
+  }
+
+  .timer {
+    margin: auto;
+  }
+}
+
+
+
+.audioProgressContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+}
+
+.progressBar {
+  --bar-bg: rgba(255, 255, 255, 0.05);
+  --seek-before-width: 0;
+  --seek-before-color:rgba(255, 255, 255, 0.1);
+  --knobby: #2ebbce;
+  --selectedKnobby: white;
+  --letter: IBMLight;
+  --knobbyHeight: 16px;
+
+  appearance: none;
+  outline: none;
+  position: relative;
+  background: var(--bar-bg);
+  height: var(--knobbyHeight);
+  width: 100%;
+  margin-left: 5px;
+}
+
+/* Progress bar styling for other browsers starts here */
+
+/* Progress bar for safari */
+.progressBar::-webkit-slider-runnable-track {
+  outline: none;
+  position: relative;
+  background: var(--bar-bg);
+  height: var(--knobbyHeight);
+  width: 100%;
+}
+
+/* Progress bar for firefox */
+.progressBar::-moz-range-track {
+  outline: none;
+  position: relative;
+  background: var(--bar-bg);
+  height: var(--knobbyHeight);
+  width: 100%;
+}
+
+.progressBar::-moz-focus-outer {
+  border: 0;
+}
+
+/* Progress bar styling after knobby starts here */
+
+/* Progress bar after - safari and chrome */
+.progressBar::before {
+  content: '';
+  height: var(--knobbyHeight);
+  width: var(--seek-before-width);
+  background-color: var(--seek-before-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Progress bar after - firefox */
+.progressBar::-moz-range-progress {
+  background-color: var(--seek-before-color);
+  height: var(--knobbyHeight);
+}
+
+/* Knob or Thumb styling starts here */
+
+/* Knobby chrome and safari */
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: var(--knobbyHeight);
+  width: 7px;
+  background-color: var(--knobby);
+  cursor: pointer;
+  z-index: 3;
+  box-sizing: border-box;
+  border: none;
+}
+/* Knobby active for chrome and safari */
+.progressBar:active::-webkit-slider-thumb{
+  background-color: var(--selectedKnobby);
+}
+
+/* Knobby firefox */
+.progressBar::-moz-range-thumb{
+  height: var(--knobbyHeight);
+  width: 7px;
+  background-color: var(--knobby);
+  cursor: pointer;
+  z-index: 3;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 0px;
+}
+
+/* Knobby active for firefox*/
+.progressBar:active::-moz-range-thumb{
+  background-color: var(--selectedKnobby);
+}
+
+
+.forwardBackwardPlay{
+  color: #2ebbce;
+  padding: 2px;
+  background: none;
+  border: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: IBMLight;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 250ms;
+
+}
+
+.forwardBackwardPlay:hover {
+  color: black;
+  background-color: #2ebbce;
+}
+
+.playPause:hover {
+  background-color: #2ebbce;
+  color: black;
+}
+
+.currentTime,
+.duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+}
+
+.currentTime{
+  margin-left: 5px;
+}
+
+.rangeBar {
+  width: 100%;
+}
+
+.playerButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  font-family: IBMLight;
+  color: #2ebbce;
+  display: flex;
+}
+
+.forceFont {
+  font-family: IBMLight;
+}
+
+.paragraph {
+  padding: 2px;
+  font-family: IBMLight;
+  color: white;
+  font-size: 18px;
+}
+
+.description3{
+  font-family: IBMLight;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.audioLink{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}

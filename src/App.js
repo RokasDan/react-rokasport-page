@@ -6,6 +6,8 @@ import Audio from './Pages/Audio'
 import Home from './Pages/Home'
 
 import Nottcraft from './Pages/softwareProjects/Nottcraft'
+import TrolleyVr from './Pages/softwareProjects/TrolleyVr'
+import StealthBoy from './Pages/softwareProjects/StealthBoy'
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
@@ -21,6 +23,8 @@ function App() {
             <Route path="/software" element={<Software/>}/>
             <Route path="/audio" element={<Audio/>}/>
             <Route path="/Nottcraft" element={<Nottcraft/>}/>
+            <Route path="/TrolleyVr" element={<TrolleyVr/>}/>
+            <Route path="/StealthBoy" element={<StealthBoy/>}/>
           </Routes>
         </div>
       </div>

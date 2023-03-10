@@ -12,7 +12,7 @@ const Navigator = () => {
         to='/about'
         id='about'
         className={({isActive}) => {
-          return `buttonStyle-left ${isActive ? 'active' : ''}`
+          return `buttonStyle ${isActive ? 'active' : ''}`
         }}
       >
         About
@@ -30,7 +30,7 @@ const Navigator = () => {
         to='/audio'
         id='audio'
         className={({isActive}) => {
-          return `buttonStyle-right ${isActive ? 'active' : ''}`
+          return `buttonStyle ${isActive ? 'active' : ''}`
         }}
       >
         Audio
