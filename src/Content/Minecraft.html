@@ -1,0 +1,262 @@
+Easting = 456883
+Northing = 339495
+
+#######################################################
+#######################################################
+#######################################################
+
+Easting4fig = 54
+Northing4fig = 38
+
+#######################################################
+#######################################################
+#######################################################
+
+Easting6fig = 542
+Northing6fig = 383
+
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+#######################################################
+
+compas = 0;
+
+
+def LionSave():
+    my_position = player.position()
+    X = my_position.get_value(Axis.X)
+    Z = my_position.get_value(Axis.Z)
+    Y = my_position.get_value(Axis.Y)
+
+    Px = X * -1
+    Pz = Z * -1
+    Py = Y * -1
+
+    player.teleport(pos(Px, Py, Pz))
+    player.teleport(pos(9345, -15, 8085))
+
+def OSTell6Fig():
+    my_position = player.position()
+    X = my_position.get_value(Axis.X)
+    Z = my_position.get_value(Axis.Z)
+    Y = my_position.get_value(Axis.Y)
+
+    Px = X * -1
+    Pz = Z * -1
+    Py = Y * -1
+
+    MinZ = 332400
+    MaxZ = 348000
+
+    MinX = 447900
+    MaxX = 463500
+
+    PlayerX = MinX + X
+    PlayerZ = MaxZ - Z
+
+    #Fetching the 4 fig OS
+    TargetNorth = Northing6fig
+    TargetEast = Easting6fig
+
+    #Rounding up the 4 figure OS
+    TargetNorth = TargetNorth * 100
+    TargetEast = TargetEast * 100
+
+    # Adding the SK number and
+    #pointing the OS coordinates to the middle of the square.
+    targetX = 400000 + TargetEast + 0
+    targetZ = 300000 + TargetNorth + 0
+
+    if targetX < 447900 or targetX > 463500 or targetZ > 348000 or targetZ < 332400:
+        player.say("These coordinates are out of Nottcraft scope!")
+    else:
+        tellX = targetX - MinX
+        tellZ = MaxZ - targetZ
+
+        player.teleport(pos(Px, Py, Pz))
+        player.teleport(pos(tellX, 120, tellZ))
+
+
+
+
+def OSTell4Fig():
+    my_position = player.position()
+    X = my_position.get_value(Axis.X)
+    Z = my_position.get_value(Axis.Z)
+    Y = my_position.get_value(Axis.Y)
+
+    Px = X * -1
+    Pz = Z * -1
+    Py = Y * -1
+
+    MinZ = 332400
+    MaxZ = 348000
+
+    MinX = 447900
+    MaxX = 463500
+
+    PlayerX = MinX + X
+    PlayerZ = MaxZ - Z
+
+    #Fetching the 4 fig OS
+    TargetNorth = Northing4fig
+    TargetEast = Easting4fig
+
+    #Rounding up the 4 figure OS
+    TargetNorth = TargetNorth * 1000
+    TargetEast = TargetEast * 1000
+
+    # Adding the SK number and
+    #pointing the OS coordinates to the middle of the square.
+    targetX = 400000 + TargetEast + 0 + 0
+    targetZ = 300000 + TargetNorth + 0 + 0
+
+    if targetX < 447900 or targetX > 463500 or targetZ > 348000 or targetZ < 332400:
+        player.say("These coordinates are out of Nottcraft scope!")
+    else:
+        tellX = targetX - MinX
+        tellZ = MaxZ - targetZ
+
+        player.teleport(pos(Px, Py, Pz))
+        player.teleport(pos(tellX, 120, tellZ))
+
+def OSTell():
+    my_position = player.position()
+    X = my_position.get_value(Axis.X)
+    Z = my_position.get_value(Axis.Z)
+    Y = my_position.get_value(Axis.Y)
+
+    Px = X * -1
+    Pz = Z * -1
+    Py = Y * -1
+
+    MinZ = 332400
+    MaxZ = 348000
+
+    MinX = 447900
+    MaxX = 463500
+
+    PlayerX = MinX + X
+    PlayerZ = MaxZ - Z
+
+
+
+
+    targetX = Easting
+    targetZ = Northing
+
+    if targetX < 447900 or targetX > 463500 or targetZ > 348000 or targetZ < 332400:
+        player.say("These coordinates are out of Nottcraft scope!")
+    else:
+        tellX = targetX - MinX
+        tellZ = MaxZ - targetZ
+
+        player.teleport(pos(Px, Py, Pz))
+        player.teleport(pos(tellX, 120, tellZ))
+
+
+def OSping():
+    MinZ = 332400
+    MaxZ = 348000
+
+    MinX = 447900
+    MaxX = 463500
+    my_position = player.position()
+    X = my_position.get_value(Axis.X)
+    Z = my_position.get_value(Axis.Z)
+    Y = my_position.get_value(Axis.Y)
+    PlayerX = MinX + X
+    PlayerZ = MaxZ - Z
+    player.say("The Easting is " + PlayerX + " The Northing is " + PlayerZ)
+
+def OSping6():
+    MinZ = 332400
+    MaxZ = 348000
+
+    MinX = 447900
+    MaxX = 463500
+    my_position = player.position()
+    X = my_position.get_value(Axis.X)
+    Z = my_position.get_value(Axis.Z)
+    Y = my_position.get_value(Axis.Y)
+    PlayerX = MinX + X
+    PlayerZ = MaxZ - Z
+
+    stringX = str(PlayerX)
+    stringZ = str(PlayerZ)
+    player.say("The Easting is " + stringX[1:4] + " The Northing is " + stringZ[1:4])
+
+def OSping4():
+    MinZ = 332400
+    MaxZ = 348000
+
+    MinX = 447900
+    MaxX = 463500
+    my_position = player.position()
+    X = my_position.get_value(Axis.X)
+    Z = my_position.get_value(Axis.Z)
+    Y = my_position.get_value(Axis.Y)
+    PlayerX = MinX + X
+    PlayerZ = MaxZ - Z
+
+    stringX = str(PlayerX)
+    stringZ = str(PlayerZ)
+    player.say("The Easting is " + stringX[1:3] + " The Northing is " + stringZ[1:3])
+
+
+player.on_chat("Get12Fig", OSping)
+player.on_chat("Get6Fig", OSping6)
+player.on_chat("Get4Fig", OSping4)
+player.on_chat("Move12Fig", OSTell)
+player.on_chat("Move6Fig", OSTell6Fig)
+player.on_chat("Move4Fig", OSTell4Fig)
+player.on_chat("LeftLion", LionSave)
+
+
+
+while compas == 1:
+  MinZ = 332400
+  MaxZ = 348000
+
+  MinX = 447900
+  MaxX = 463500
+  my_position = player.position()
+  X = my_position.get_value(Axis.X)
+  Z = my_position.get_value(Axis.Z)
+  Y = my_position.get_value(Axis.Y)
+  PlayerX = MinX + X
+  PlayerZ = MaxZ - Z
+  player.say("Easting - " + PlayerX + " Northing - " + PlayerZ)
