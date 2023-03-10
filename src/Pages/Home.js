@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import './PageStyle.css';
 import pdf from "../Content/CV.pdf";
+import p from "../Content/Minecraft.txt";
 
 const Home = () => {
   // Page for the About section.
@@ -52,6 +53,9 @@ const Home = () => {
                           href="https://www.instagram.com/rokas_dan">[Instagram]</a><br/>
             Link To My <a className="inLineLink"
                           href="https://www.facebook.com/rokas.danevicius/">[Facebook]</a><br/>
+
+            Link To My <a className="inLineLink" href={p} target="_blank"
+                          rel="noreferrer">[CV]</a><br/>
           </p>
         </div>
       </div>
