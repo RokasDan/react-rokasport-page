@@ -45,7 +45,7 @@ const StealthBoy = () => {
   return (
     <div className="pageStyle">
 
-      <ProjectHeader projectName='Stealth Boy' date='2022-01-14'/>
+      <ProjectHeader projectName='Stealth Boy' date='2022-02-14'/>
 
       <VideoComponent
         src="https://www.youtube.com/embed/KGhloxp82pM?ecver=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560"/>
@@ -208,6 +208,8 @@ const StealthBoy = () => {
       </p>
 
       <CodeBlock codeString={codeString} language="csharp"/>
+      <p className='paragraph1'>
+      </p>
 
       <h3 className="pageHeader1">
         Closing Notes

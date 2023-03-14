@@ -8,8 +8,13 @@ import Home from './Pages/Home'
 import Nottcraft from './Pages/softwareProjects/Nottcraft'
 import TrolleyVr from './Pages/softwareProjects/TrolleyVr'
 import StealthBoy from './Pages/softwareProjects/StealthBoy'
+import Pyfighter from "./Pages/softwareProjects/Pyfighter";
+import ReactAudio from "./Pages/softwareProjects/ReactAudio";
+import BitTron from "./Pages/softwareProjects/8BitTron";
+import TrafficPolice from "./Pages/softwareProjects/TrafficPolice";
 
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+
 
 function App() {
   return (
@@ -25,6 +30,10 @@ function App() {
             <Route path="/Nottcraft" element={<Nottcraft/>}/>
             <Route path="/TrolleyVr" element={<TrolleyVr/>}/>
             <Route path="/StealthBoy" element={<StealthBoy/>}/>
+            <Route path="/Pyfighter" element={<Pyfighter/>}/>
+            <Route path="/ReactAudio" element={<ReactAudio/>}/>
+            <Route path="/BitTron" element={<BitTron/>}/>
+            <Route path="/TrafficPolice" element={<TrafficPolice/>}/>
           </Routes>
         </div>
       </div>
