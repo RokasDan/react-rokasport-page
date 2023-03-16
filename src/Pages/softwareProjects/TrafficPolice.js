@@ -48,7 +48,7 @@ const TrafficPolice = () => {
         As part of my Master's degree in Computer Science program at Nottingham University, I
         developed this project. If you would like to try it out for yourself, please visit my <a
         className="inLineLink"
-        href="https://github.com/RokasDan">[GitHub]</a> page.
+        href="https://github.com/RokasDan/Traffic-Police-Database">[GitHub]</a> page.
       </p>
 
       <h3 className="pageHeader1">

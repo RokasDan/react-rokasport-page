@@ -67,7 +67,7 @@ const ReactAudio = () => {
         <p className='paragraph1'>
           If you're interested in using this audio player for your own projects, feel free to check
           it out on my <a className="inLineLink"
-                          href="https://github.com/RokasDan">[GitHub]</a> page.
+                          href="https://github.com/RokasDan/React_Audio_Player">[GitHub]</a> page.
         </p>
 
         <h3 className="pageHeader1">

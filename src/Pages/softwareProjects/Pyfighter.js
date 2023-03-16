@@ -605,7 +605,7 @@ const Pyfighter = () => {
 
       <p className='paragraph1'>
         If you wish to try the game for your self please check it out on <a className="inLineLink"
-                                                                            href="https://github.com/RokasDan">[GitHub]</a>.
+                                                                            href="https://github.com/RokasDan/py-fighter">[GitHub]</a>.
       </p>
 
       <h3 className="pageHeader1">

@@ -46,7 +46,7 @@ const ReactAudio = () => {
       <p className='paragraph1'>
         If you'd like to experience this synthesizer for yourself, please visit my <a
         className="inLineLink"
-        href="https://github.com/RokasDan">[GitHub]</a> page.
+        href="https://github.com/RokasDan/8-Bit-Tron">[GitHub]</a> page.
       </p>
 
       <h3 className="pageHeader1">

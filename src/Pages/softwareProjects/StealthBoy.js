@@ -71,7 +71,7 @@ const StealthBoy = () => {
 
       <p className='paragraph1'>
         If you wish to try out the prototype your self please find the source on my <a className="inLineLink"
-                                                                                       href="https://github.com/RokasDan">[GitHub]</a>.
+                                                                                       href="https://github.com/RokasDan/Stealth-Boy">[GitHub]</a>.
       </p>
 
       <h3 className="pageHeader1">

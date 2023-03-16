@@ -31,7 +31,7 @@ const Home = () => {
           </h3>
 
           <p className="paragraph">
-            Email:&nbsp;&nbsp;rokas108@gmail.com<br/>
+            Email:&nbsp;&nbsp;Rokas.Danevicius@proton.me<br/>
             Mobile&nbsp;LT:&nbsp;&nbsp;+37060599192<br/>
             Mobile&nbsp;UK:&nbsp;&nbsp;+447721953057<br/>
           </p>
