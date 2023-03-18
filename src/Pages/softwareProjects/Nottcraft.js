@@ -319,8 +319,8 @@ const Nottcraft = () => {
 
       <p className="paragraph1">
         If you're interested in trying out Nottcraft
-        for yourself, please visit our project on <a className="inLineLink"
-                                                     href="https://github.com/RokasDan">[GitHub]</a> and
+        for yourself, please download our project from my <a className="inLineLink"
+                                                     href="https://drive.google.com/drive/folders/1V2OTiH-TvwR3l1KqMOOvXRR9KvqG7Lfg?usp=share_link">[Google Drive]</a> and
         give it a try.
       </p>
 

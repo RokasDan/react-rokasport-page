@@ -54,9 +54,9 @@ const TrolleyVr = () => {
         The project was exhibited at Nottingham Contemporary Museum and covered by Notts TV news.
         For academic findings, please see the thesis available <a className="inLineLink" href={pdf} target="_blank"
                                                                   rel="noreferrer">[here]</a>.
-        If you wish to try this project out your self, you can download the game from <a
+        If you wish to try this project out your self, you can download the game from my<a
         className="inLineLink"
-        href="https://github.com/RokasDan">[here]</a>.
+        href="https://drive.google.com/drive/folders/1yxx3i8Xg55WfdQcg9SXNvuuf6v0L-4nZ?usp=share_link">[Google Drive]</a>.
       </p>
 
       <VideoComponent
