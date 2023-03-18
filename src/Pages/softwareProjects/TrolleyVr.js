@@ -14,6 +14,7 @@ import image2 from "../../Pictures/stickman.png";
 import image3 from "../../Pictures/Train.png";
 import image4 from "../../Pictures/blood.png";
 import image5 from "../../Pictures/explode.png";
+import pdf from "../../Content/Thesis.pdf";
 
 
 const TrolleyVr = () => {
@@ -51,8 +52,8 @@ const TrolleyVr = () => {
 
       <p className='paragraph1'>
         The project was exhibited at Nottingham Contemporary Museum and covered by Notts TV news.
-        For academic findings, please see the thesis available <a className="inLineLink"
-                                                                  href="https://github.com/RokasDan">[here]</a>.
+        For academic findings, please see the thesis available <a className="inLineLink" href={pdf} target="_blank"
+                                                                  rel="noreferrer">[here]</a>.
         If you wish to try this project out your self, you can download the game from <a
         className="inLineLink"
         href="https://github.com/RokasDan">[here]</a>.

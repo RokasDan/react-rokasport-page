@@ -56,7 +56,7 @@ const StarDust = () => {
         Murzaitė, who crafted an outstanding cover for the song, as showcased in the video above. I
         wholeheartedly recommend checking out her other works on her <a
         className="inLineLink"
-        href="https://github.com/RokasDan">[Instagram]</a>, as she is an exceptionally talented
+        href="https://www.instagram.com/psichoanalize/">[Instagram]</a>, as she is an exceptionally talented
         artist.
       </p>
 

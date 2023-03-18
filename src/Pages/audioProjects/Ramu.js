@@ -50,7 +50,7 @@ const Ramu = () => {
         magic and filmed and edited the video that you can watch at the beginning of the page. I
         highly recommend following his <a
         className="inLineLink"
-        href="https://github.com/RokasDan">[Instagram]</a> for more of his stunning projects!
+        href="https://www.instagram.com/chrisfernandezfilm/">[Instagram]</a> for more of his stunning projects!
       </p>
 
     </div>
