@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import './PageStyle.css';
 import pdf from "../Content/CV.pdf";
+import t from "../Content/icon.png";
 import p from "../Content/Minecraft.txt";
 
 const Home = () => {
